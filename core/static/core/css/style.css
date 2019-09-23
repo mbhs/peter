@@ -1,0 +1,652 @@
+:root {
+    --dg: #00a774;
+    --dgrgb: 0, 107, 75;
+    --lg: #6af0a3;
+    --mg: #00da98;
+    --wg: #14a989;
+    --db: #542705;
+    --lb: #913d05;
+    --mb: #816740;
+}
+
+
+body {
+    background: var(--lg);
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .schedule {
+    font-family: 'Nunito', sans-serif;
+}
+.tooltip h3 {
+    font-family: 'Nunito', sans-serif;
+}
+#title {
+    /*color: var(--dg);*/
+    color: #fff;
+}
+.tree-l {
+    margin: 0px -20vh;
+    background-size: 40vh 100vh;
+    height: 100vh;
+    width: 40vh;
+    background-image: url(../img/treeL.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+}
+.tree-r {
+    margin: 0px -20vh;
+    background-size: 40vh 100vh;
+    height: 100vh;
+    width: 40vh;
+    background-image: url(../img/treeR.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+}
+.layer {
+  position: absolute; }
+  .layer div {
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden; }
+.navbar-nav {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.navbar-nav > li {
+    display: inline-block;
+    float: none;
+}
+.nav-link {
+    transition: 0.3s;
+    color: #004402b3 !important;
+    margin-left: .5em;
+    margin-right: .5em;
+}
+.nav-link:hover {
+    transform: translateY(2px);
+}
+.nav-item.active .nav-link,
+.nav-item:hover .nav-link {
+    color: #004402 !important;
+}
+/*.nav-item.active .nav-link {
+    font-size: 1.2rem;
+}*/
+main {
+    text-align: center; 
+    margin: auto;
+}
+.orch-wrap {
+    background: var(--dg);
+    overflow-y: hidden;
+}
+#orchestra {
+    color: white;
+}
+#orchestra h1 {
+    padding-bottom: 2rem;
+}
+#orchestra .row {
+    margin-bottom: 5vh;
+}
+#strings .row {
+    margin-bottom: 0;
+}
+#orchestra .col {
+    flex: 0 0 8.333333%;
+}
+#orchestra img {
+    max-height: 10vh;
+    max-width: 8vw;
+}
+#orchestra #ww img {
+    max-height: 20vh;
+    max-width: none;
+}
+#orchestra #brass img {
+    max-height: 15vh;
+    max-width: none;
+}
+#strings img {
+    max-height:none;
+    max-width: none;
+}
+#strings #violins {
+    max-width: 30vw;
+}
+#strings > .col-6 img {
+    /*max-height: 100%;
+    max-width: 100%;*/
+}
+#strings .col {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+#stand img{
+    max-width: 6vw;
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: 0;
+}
+#cellos img{
+    max-width: 20vw;
+    transform: translateX(-5vw);
+    position: absolute;
+    bottom: 0;
+}
+#basses img{
+    max-width: 15vw;
+    transform: translateX(4vw);
+    position: absolute;
+    bottom: 0;
+}
+
+#brass img {
+    max-height: 10vh;
+    max-width: none;
+}
+#ww img {
+    max-height: 15vh;
+    max-width: none;
+}
+#orchestra #violas {
+    max-width: 15vw;
+}
+.instrument-info {
+    /*background-color: var(--dg);*/
+    color: #ffffff;
+}
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+.bg-tilted{
+    width: 120%;
+    height: 200px;
+    background: var(--dg);
+    /*position: absolute;
+    bottom: -200px;
+    left: 0%;
+    -webkit-transform-origin: 0;
+    -ms-transform-origin: 0;
+    transform-origin: 0;
+    -webkit-transform: rotate(-4deg);
+    -ms-transform: rotate(-4deg);
+    transform: rotate(-4deg);*/
+}
+.bg-tilted-wrapper {
+    width: 100%;
+    /*height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;*/
+    overflow: hidden;
+}
+
+.schedule .card, #about .card {
+    border: 0;
+    background-color: rgba(255,255,255,0.6);
+}
+
+#about .card .btn {
+    background-color: var(--dg);
+    border: 0;
+}
+
+#about .card .btn:hover {
+    background-color: var(--mg);
+}
+
+#about .row {
+    margin-bottom: 1rem;
+}
+#about {
+    overflow-x: hidden;
+}
+
+/*.card-title a {
+    text-decoration: underline dotted;
+}
+
+.card-title a:hover {
+    text-decoration: underline dashed;
+}*/
+
+.schedule .card-title {
+    margin-bottom: .5rem;
+}
+
+.schedule .card-text {
+    margin-bottom: .1rem;
+    font-weight: bolder;
+    opacity: .5;
+}
+.schedule .card-body {
+    padding: .5rem 1.25rem .5rem 1.25rem;
+}
+
+@media screen and (min-width:768px) {
+    .schedule {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-rows:
+            [tracks] auto
+            [time-1000] auto
+            [time-1015] auto
+            [time-1030] auto
+            [time-1045] auto
+            [time-1100] auto
+            [time-1115] auto
+            [time-1130] auto
+            [time-1145] auto
+            [time-1200] auto
+            [time-1215] auto
+            [time-1230] auto
+            [time-1245] auto
+            [time-1300] auto;
+            /* Note 1:
+            Use 24hr time for gridline names for simplicity
+
+            Note 2: Use "auto" instead of "1fr" for a more compact schedule where height of a slot is not proportional to the session length. Implementing a "compact" shortcode attribute might make sense for this!
+            Try 0.5fr for more compact equal rows. I don't quite understand how that works :)
+            */
+
+        grid-template-columns:
+            [times] 6em
+            [track-1-start] 1fr
+            [track-1-end track-2-start] 1fr
+            [track-2-end track-3-start] 1fr
+            [track-3-end];
+    }
+}
+
+.time-slot {
+    grid-column: times;
+}
+
+.track-slot {
+    display: none; /* hidden on small screens and browsers without grid support */
+}
+
+@supports( display:grid ) {
+    @media screen and (min-width:768px) {
+        .track-slot {
+            display: block;
+            text-align: center;
+            padding: 10px 5px 10px 5px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: rgba(255,255,255,.9);
+        }
+    }
+}
+
+/* Small-screen & fallback styles */
+.session {
+    margin-bottom:  1em;
+}
+
+@supports( display:grid ) {
+    @media screen and (min-width: 768px) {
+        .session {
+            margin: 0;
+        }
+    }
+}
+
+/*************************
+ * VISUAL STYLES
+ * Design-y stuff ot particularly important to the demo
+ *************************/
+
+
+.session {
+    padding: .5em;
+    border-radius: .25rem;
+}
+
+.session-title,
+.session-time,
+.session-track,
+.session-presenter {
+    display: block;
+}
+
+.session-title,
+.time-slot {
+    margin: 1em 0em 1em 0em;
+    font-size: 1.5em;
+}
+
+.session-title a {
+    color: #fff;
+}
+
+.track-slot,
+.time-slot {
+   border-radius: .25rem;
+}
+.track-slot {
+    font-size: 1.5rem;
+}
+
+.track-1 {
+    background-color: #1259B2;
+    color: #fff;
+}
+
+.track-2 {
+    background-color: #687f00;
+    color: #fff;
+}
+
+.track-3 {
+    background-color: #544D69;
+    color: #fff;
+}
+
+.track-4 {
+    background-color: #c35500;
+    color: #fff;
+}
+
+.track-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ccc;
+    color: #000;
+    box-shadow: none;
+}
+
+.text {
+    max-width: 750px;
+    font-size: 18px;
+    margin: 0 auto 50px;
+}
+
+.meta {
+    color: #555;
+    font-style: italic;
+}
+
+.meta a {
+    color: #555;
+}
+
+hr {
+    margin: 40px 0;
+}
+
+#amenities img {
+    width: 100%;
+}
+#amenities > div {
+    position: relative;
+}
+#amenities > div > div {
+    background-color: var(--dg);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 1rem;
+}
+
+@media (max-width: 767px) {
+    #amenities > div > div {
+       width: 100%!important;
+    }
+}
+
+@media all and (max-width: 991px) and (min-width: 768px) {
+    #amenities > div > div {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        padding: 0rem .5rem 0rem .5rem;
+        width: 45%!important;
+    }
+    #amenities .odd {
+        right: 0%!important;
+        left: unset !important;
+    }
+    #amenities .even {
+        left: 0%!important;
+    }
+}
+
+/*1150px*/
+@media (min-width: 992px) {
+    #amenities > div > div {
+        background-color: rgba(var(--dgrgb),.85);
+        position: absolute;
+        top: 0;
+        height: 100%;
+        padding: 0rem .5rem 0rem .5rem;
+    }
+}
+#amenities {
+    overflow-x: hidden;
+}
+
+.talkbubble-l, .talkbubble-r {
+    position: relative;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    max-width: 30vw;
+}
+
+#testimonials-wrap {
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.talkbubble-l {
+    align-self: flex-start;
+}
+.talkbubble-r {
+    align-self: flex-end;
+}
+
+
+.talkbubble-l:before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 26px solid rgba(255,255,255,.6);
+    border-bottom: 13px solid transparent;
+}
+.talkbubble-r:before {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-left: 26px solid rgba(255,255,255,.6);
+    border-bottom: 13px solid transparent;
+}
+
+
+#index {
+    padding: 0 50px 0 50px;
+}
+#index a {
+    color: inherit;
+}
+
+#index .btn {
+    background-color: var(--dg);
+    color: white;
+    border: none;
+}
+#index .btn:hover{
+    background-color: var(--mg);
+}
+
+#testimonials .carousel-item {
+  height: 5em;
+}
+#testimonials p {
+  font-style: italic;
+}
+#sign {
+    max-width: 58vw;
+    margin: auto;
+    display: none;
+    grid-template-columns: 1fr .2fr .1fr .2fr 1fr;
+    grid-template-rows: .5fr 1fr 1fr 1fr 4fr;
+}
+
+@media (min-width: 576px) {
+    #sign {
+        display: grid;
+    }
+}
+
+#sign a {
+    background-color: var(--mb);
+}
+
+#sign #pointer-r i {
+  padding-left: .5em;
+    opacity: 0;
+    transition: 0.5s;
+}
+#sign #pointer-l i {
+  padding-right: .5em;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#sign #pointer-r:hover i {
+    opacity: 1;
+}
+#sign #pointer-l:hover i {
+    opacity: 1;
+}
+
+#sign #pointer-r:hover div {
+  padding-right: 25px;
+}
+
+#sign #pointer-l:hover div {
+  padding-left: 25px;
+}
+
+#sign div {
+    background-color: inherit;
+    color: white;
+}
+#sign a:hover{
+    text-decoration: none;
+    color: white;
+    background-color: var(--lb);
+}
+
+#sign #pointer-l:hover::before{
+  border-right-color: var(--lb);
+}
+
+#sign #pointer-r:hover::before{
+  border-left-color: var(--lb);
+}
+
+#sign .pole {
+    background-color: var(--db);
+    grid-column: 3;
+    grid-row: 1 / 6;
+}
+
+.left {
+    grid-column: 1 / 5;
+    grid-row: 4;
+}
+.right {
+    grid-column: 2 / 6;
+    grid-row: 2;
+}
+
+#pointer-l, #pointer-r {
+    height: 40px;
+    position: relative;
+    background: var(--mb);
+    line-height: 40px;
+    transition: all 0.5s;
+}
+#pointer-l div {
+    padding-right: 40px;
+    transition: 0.5s;
+}
+#pointer-r div {
+    padding-left: 40px;
+    transition: 0.5s;
+}
+#pointer-r:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid var(--lg);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+#pointer-r:before{
+    content: "";
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid var(--mb);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    transition: inherit;
+}
+
+#pointer-l:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-right: 20px solid var(--lg);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+#pointer-l:before{
+    content: "";
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-right: 20px solid var(--mb);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    transition: inherit;
+}

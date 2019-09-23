@@ -1,0 +1,264 @@
+{% extends "core/base.html" %}
+{% load static %}
+{% block content %}
+    <div class="container-fluid">
+        <section id="amenities">
+            <div>
+                <img src="{% static 'core/img/pettingzoo.jpeg' %}" />
+                <div style="left:7%; width:35%;" class="even"  data-aos="slide-right">
+                    <div>
+                        <h1>Instrument Petting Zoo</h1>
+                        <p> Member of Blair Bands and Orchestras will be on hand with their instruments so kids can see them, learn about them, and can try them out. We expect to have a full compliment of band and orchestra instruments, as well as pianos. This is something the National Symphony Orchestra does, but it costs way more and is all the way downtown!  </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="{% static 'core/img/marchingband.jpeg' %}" />
+                <div style="left:65%; width:30%;" class="odd" data-aos="slide-left">
+                    <div>
+                        <h1>Marching Band</h1>
+                        <p>The festival will also feature the MBHS Marching Band showcase and two fifteen minute performances at 10:15 and 11:30. Make sure you catch them!</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="{% static 'core/img/orff.jpeg' %}" />
+                <div style="left:48%; width:32%;" class="odd" data-aos="slide-left">
+                    <div>
+                        <h1>Orff Instruments</h1>
+                        <p>Orff Group Drumming Lesson for kids 7 and up! Offered at 10:30 and 12:15. </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="{% static 'core/img/artscrafts.jpeg' %}" />
+                <div style="left:65%; width:30%;" class="odd"  data-aos="slide-left">
+                    <div>
+                        <h1>Arts and Crafts</h1>
+                        <p> We will have several stations featuring coloring, word searches, origami, puzzles, and instrument making. Give your child a chance to show off their skills and encourage creativity and early learning! </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="{% static 'core/img/facepainting.jpeg' %}" />
+                <div style="left:32%; width:30%;" class="even" data-aos="slide-right">
+                    <div>
+                        <h1>Face Painting</h1>
+                        <p>The festival will feature face-painting, allowing your child to express their creativity in a fun and delightful manner! All materials are 100% safe and we will have trained volunteers on-hand for assistance. </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="{% static 'core/img/cupcakewalk.jpeg' %}" />
+                <div style="left:65%; width:30%;" class="even"  data-aos="slide-left">
+                    <div>
+                        <h1>Cupcake Walk</h1>
+                        <p>Don't miss the chance to win a cupcake! The game begins when the music starts; children walk around in a circle as the music is playing. When the music stops, the children stop. A volunteer will call out a carnival image and the child standing on the corresponding image wins a cupcake! </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img style="width:50%;" src="{% static 'core/img/raffle.jpeg' %}" />
+                <img style="width:50%;float:right;" src="{% static 'core/img/raffle2.jpeg' %}" />
+                <div style="left:50%; width:20%;" class="odd" data-aos="slide-left">
+                    <div>
+                        <h1>Raffle</h1>
+                        <p>The raffle will be called after each orchestra performance. Prizes may include books, instruments, music lessons, and camp registration!</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="{% static 'core/img/bakesale.jpeg' %}" />
+                <div style="left:10%; width:25%;" class="odd"  data-aos="slide-right">
+                    <div>
+                        <h1>Food Sale</h1>
+                        <p>We will be holding a bake sale throughout the event. Buy baked goods such as brownies, cookies, cupcakes, and more! All proceeds go towards funding Blair Music and help support events such as this one. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container-fluid">
+            <div class="container">
+                <h2 class="display-2 text-center py-5">Schedule</h2>
+                <div class="schedule" aria-labelledby="schedule-heading">
+
+                    <span class="track-slot" aria-hidden="true" style="grid-column: track-1; grid-row: tracks;">Auditorium</span>
+                    <span class="track-slot" aria-hidden="true" style="grid-column: track-2; grid-row: tracks;">Orff Room</span>
+                    <span class="track-slot" aria-hidden="true" style="grid-column: track-3; grid-row: tracks;">Ongoing</span>
+
+                    <h2 class="time-slot" style="grid-row: time-1000;">10:00am</h2>
+
+                    <div class="card" style="grid-column: track-3; grid-row: time-1000 / time-1245;">
+                      <div class="card-body">
+                        <p class="card-text">10:00 - 12:45</p>
+                        <h5 class="card-title">Ongoing Festivities: Instrument Petting Zoo, Face Painting, Bake Sale</h5>
+                      </div>
+                    </div>
+
+                    <div class="card" style="grid-column: track-1; grid-row: time-1015 / time-1030;">
+                      <div class="card-body">
+                        <p class="card-text">10:15 - 10:30</p>
+                        <h5 class="card-title">Marching Band Performance</h5>
+                        <h5 class="card-title">Raffle Drawing 1</h5>
+                      </div>
+                    </div>
+
+                    <div class="card" style="grid-column: track-2; grid-row: time-1030 / time-1100;">
+                      <div class="card-body">
+                          <p class="card-text">10:30 - 11:00</p>
+                        <h5 class="card-title">Orff Group Drumming Lesson</h5>
+                      </div>
+                    </div>
+
+                    <div class="card" style="grid-column: track-1; grid-row: time-1045 / time-1115;">
+                      <div class="card-body">
+                          <p class="card-text">10:45 - 11:15</p>
+                        <h5 class="card-title">Carnival of the Animals Performance</h5>
+                      </div>
+                    </div>
+
+
+                    <h2 class="time-slot" style="grid-row: time-1100;">11:00am</h2>
+
+                    <div class="card" style="grid-column: track-1; grid-row: time-1130 / time-1145;">
+                      <div class="card-body">
+                          <p class="card-text">11:30 - 11:45</p>
+                        <h5 class="card-title">Marching Band Performance</h5>
+                        <h5 class="card-title">Raffle Drawing 2</h5>
+                      </div>
+                    </div>
+
+                    <h2 class="time-slot" style="grid-row: time-1200;">12:00pm</h2>
+
+                    <div class="card" style="grid-column: track-1; grid-row: time-1200 / time-1230;">
+                      <div class="card-body">
+                          <p class="card-text">12:00 - 12:30</p>
+                        <h5 class="card-title">Carnival of the Animals Performance</h5>
+                      </div>
+                    </div>
+
+                    <div class="card" style="grid-column: track-2; grid-row: time-1215 / time-1245;">
+                      <div class="card-body">
+                          <p class="card-text">12:15 - 12:45</p>
+                        <h5 class="card-title">Orff Group Drumming Lesson</h5>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-tilted-wrapper">
+                <div class="bg-tilted"></div>
+            </div>
+        </div>
+
+        <div class="container-fluid orch-wrap">
+            <div id="orchestra" class="container">
+                <h1 class="display-2 text-center">Meet the Orchestra</h1>
+                <div class="row justify-content-center" id="percussion">
+                    <div class="col">
+                        <img onclick="playSound('{% static 'core/audio/bassdrum.mp3' %}')" src="{% static 'core/img/bassdrum.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Bass Drum</h3><p>The bass drum is a drum made out of an animal skin. It vibrates when the stretched animal skin, or drum head, is hit with a mallet.</p></div>">
+                    </div>
+                    <div class="col">
+                        <img onclick="playSound('{% static 'core/audio/tambourine.mp3' %}')" src="{% static 'core/img/tambourine.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Tambourine</h3><p>The tambourine makes a jingle sound. It has a lot of small cymbals that hit each other when the drum is hit. You can shake it or hit it.</p></div>">
+                    </div>
+                    <div class="col">
+                        <img onclick="playSound('{% static 'core/audio/snare.mp3' %}')" src="{% static 'core/img/snare.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Snare Drum</h3><p>The snare drum sounds raspy. This is because it has a set of bent wires underneath that rattle when you hit the drum.</p></div>">
+                    </div>
+                    <div class="col">
+                        <img onclick="playSound('{% static 'core/audio/cymbals.mp3' %}')" src="{% static 'core/img/cymbals.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Cymbals</h3><p>The crash cymbals make sound by vibrating when they are hit together. They are built so they make an explosive sound that goes away quickly.</p></div>">
+                    </div>
+                    <div class="col">
+                        <img onclick="playSound('{% static 'core/audio/castanet.mp3' %}')" src="{% static 'core/img/castanet.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Castanets</h3><p>There are two wooden halves of a castanet. It makes sound when you hit the two halves together.</p></div>">
+                    </div>
+                    <div class="col">
+                        <img onclick="playSound('{% static 'core/audio/triangle.mp3' %}')" src="{% static 'core/img/triangle.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Triangle</h3><p>The triangle makes sound by vibrating its metal frame. To play it, you hit the triangle with another piece of metal.</p></div>">
+                    </div>
+                    <div class="col">
+                        <img onclick="playSound('{% static 'core/audio/timpani.mp3' %}')" src="{% static 'core/img/timpani.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Timpani</h3><p>The timpani are a set of drums that are tuned so they each play a certain note. You can change the note a drum plays by pressing on the pedals.</p></div>">
+                    </div>
+                </div>
+                <div class="row justify-content-center" id="brass">
+                    <div class="col">
+                        <img onclick="playSound('{% static 'core/audio/horn.mp3' %}')" src="{% static 'core/img/horn.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>French Horn</h3><p>The french horn is actually the longest of the instruments. If you straightened out all of the tubing, it would be 12 feet long! It plays the part of the wolf.</p></div>">
+                    </div>
+                    <div class="col">
+                        <img onclick="playSound('{% static 'core/audio/trumpet.mp3' %}')" src="{% static 'core/img/trumpet.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Trumpet</h3><p>The trumpet is the highest brass instrument.</p></div>">
+                    </div>
+                    <div class="col">
+                        <img onclick="playSound('{% static 'core/audio/trombone.mp3' %}')" src="{% static 'core/img/trombone.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Trombone</h3><p>The trombone doesn't have any valves. It changes notes by pulling the big slide in and out.</p></div>">
+                    </div>
+                </div>
+                <div class="row justify-content-center" id="ww">
+                    <div class="col">
+                        <img onclick="playSound('{% static 'core/audio/bassoon.mp3' %}')" src="{% static 'core/img/bassoon.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Bassoon</h3><p>The bassoon is a double reed instrument, like the oboe.</p></div>">
+                    </div>
+                    <div class="col">
+                        <img onclick="playSound('{% static 'core/audio/clarinet.mp3' %}')" src="{% static 'core/img/clarinet.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Clarinet</h3><p>The clarinet is a single reed instrument. It plays the part of the cat.</p></div>">
+                    </div>
+                    <div class="col">
+                        <img onclick="playSound('{% static 'core/audio/oboe.mp3' %}')" src="{% static 'core/img/oboe.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Oboe</h3><p>The oboe is a double reed instrument, like the bassoon. It plays the part of the duck.</p></div>">
+                    </div>
+                    <div class="col">
+                        <img onclick="playSound('{% static 'core/audio/flute.mp3' %}')" src="{% static 'core/img/flute.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Flute</h3><p>The flute is the highest instrument in the orchestra. It plays the part of the bird.</p></div>">
+                    </div>
+                </div>
+                <div class="row justify-content-center" id="strings">
+                    <div class="col-1"></div>
+                    <div class="col">
+                        <img onclick="playSound('{% static 'core/audio/violin.mp3' %}')" class="float-right" id="violins" src="{% static 'core/img/violins.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Violin</h3><p>The violin is the smallest and highest string instrument. The player puts with the violin under their chin to play. The violins usually play two different parts.</p></div>">
+                    </div>
+                    <div class="col">
+                        <div class="row h-50">
+                            <div class="col">
+                                <img onclick="playSound('{% static 'core/audio/viola.mp3' %}')" id="violas" class="float-left" src="{% static 'core/img/violas.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Viola</h3><p>The viola is slightly larger than the violin, but is played the same way. It plays lower notes because the strings are longer.</p></div>">
+                            </div>
+                        </div>
+                        <div class="row h-50">
+                            <div class="col" id="stand">
+                                <img src="{% static 'core/img/stand.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Conductor</h3><p>The conductor leads the orchestra. They don't play an instrument, but they use a baton to show the other people when to play.</p></div>">
+                            </div>
+                            <div class="col" id="cellos">
+                                <img onclick="playSound('{% static 'core/audio/cello.mp3' %}')" src="{% static 'core/img/cellos.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Cello</h3><p>The cello is lower than the viola, and a lot bigger. It is so big that it rests on the floor on its endpin.</p></div>">
+                            </div>
+                            <div class="col" id="basses">
+                                <img onclick="playSound('{% static 'core/audio/bass.mp3' %}')" src="{% static 'core/img/basses.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Bass</h3><p>The string bass, or double bass, is the lowest string instrument in the orchestra.</p></div>">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <script>
+        function playSound(soundfile) {
+            var audio = new Audio(soundfile);
+            audio.play();
+        }
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip({boundary: "viewport"})
+        })
+        $(function() {
+            var rotation = -0.3;
+            var rotationStr="rotate(0rad) translate(-25%,50%)";
+            var $tilt=$(".bg-tilted");
+            $(window).scroll(function() {
+                var dist=0.5*($tilt.offset().top-$(window).scrollTop()-0.25*window.innerHeight)/window.innerHeight;//+$tilt.outerHeight(true)
+                if(dist<1 && dist>0){
+                    rotationStr = "rotate(" + rotation*dist + "rad) translate(-10%,50%)";
+                } else if(dist>1){
+                    //rotationStr = "rotate(" + rotation + "rad) translate(-10%,50%)";
+                } else if (dist<0){
+                    rotationStr="translate(-10%,50%)";
+                }
+                $tilt.css({
+                        "-webkit-transform": rotationStr,
+                        "-moz-transform": rotationStr,
+                        "transform": rotationStr
+                });
+            });
+        })
+    </script>
+{% endblock %}

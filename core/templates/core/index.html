@@ -1,0 +1,65 @@
+{% extends "core/base.html" %}
+{% load static %}
+{% block content %}
+<div id="scene" data-scalar-y="0" class="fixed-top">
+    <div data-depth="0.1" class="layer"><div class="tree-r"></div></div>
+    <div data-depth="0.1" class="layer"><div class="tree-l"></div></div>
+</div>
+<div class="container" id="index">
+    <main>
+        <h1 id="title" class="display-1">Peter and the Wolf</h1>
+        3rd annual
+        <h3>Saturday, March 21 | 10AM - 1PM</h3>
+        <h3><a href="http://maps.google.com/maps?q=51+University+Blvd,+Silver+Spring,+MD+20901" target="_blank">51 University Blvd E, Silver Spring, MD 20901</a></h3>
+        <p class="lead">MBHS Music is proud to present Peter and the Wolf, a community music festival for children.</p>
+        <!--Check out what's going on at the event,
+        buttons-->
+        <div id="testimonials" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <p>"My son is 3 years old, and he really enjoys music. It was wonderful to watch his curiosity come alive at Carnival of the Animals."
+                </p>
+                </div>
+                <div class="carousel-item">
+                    <p>"The students were delightful and the event was a huge success. $5 was a bargain!"
+                </p>
+                </div>
+                <div class="carousel-item">
+                  <p>"The reed he got to keep is in his box of prized treasures!"
+                </p>
+                </div>
+                <div class="carousel-item">
+                  <p>"I was particularly impressed with the students as they encouraged the children to play and handle their instruments."
+                </p>
+                </div>
+                <div class="carousel-item">
+                  <p>"This was truly an amazing event that should become a tradition!"
+                </p>
+                </div>
+                <div class="carousel-item">
+                  <p>"I can’t believe this was your first time. It was really terrific."
+                </p>
+                </div>
+                <div class="carousel-item">
+                  <p>"We loved the event and we will recommend it to all our neighbors next year!"
+                      </p>
+                </div>
+              </div>
+            </div>
+        <a class="btn btn-primary btn-lg btn-block d-sm-none" href="{% url 'about' %}">Check out our Sponsors</a>
+        <a class="btn btn-primary btn-lg btn-block d-sm-none" href="{% url 'activities' %}">Look at our Activities</a>
+        <div id="sign">
+            <div class="pole"></div>
+            <a class="left" id="pointer-l" href="{% url 'about' %}"><div><i class="fas fa-chevron-left"></i>Sponsors</div></a>
+            <a class="right" id="pointer-r" href="{% url 'activities' %}"><div>Activities<i class="fas fa-chevron-right"></i></div></a>
+        </div>
+
+
+    </main>    
+</div>
+<script src="{% static 'core/js/parallax.min.js' %}"></script>
+<script>
+    var scene = document.getElementById('scene');
+    var parallaxInstance = new Parallax(scene);
+</script>
+{% endblock %}
