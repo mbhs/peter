@@ -15,7 +15,7 @@ body {
     font-family: 'Merriweather Sans', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, .schedule {
+h1, h2, h3, h4, h5, h6, #schedule {
     font-family: 'Nunito', sans-serif;
 }
 .tooltip h3 {
@@ -195,7 +195,7 @@ main {
     overflow: hidden;
 }
 
-.schedule .card, #about .card {
+#schedule .card, #about .card {
     border: 0;
     background-color: rgba(255,255,255,0.6);
 }
@@ -224,21 +224,21 @@ main {
     text-decoration: underline dashed;
 }*/
 
-.schedule .card-title {
+#schedule .card-title {
     margin-bottom: .5rem;
 }
 
-.schedule .card-text {
+#schedule .card-text {
     margin-bottom: .1rem;
     font-weight: bolder;
     opacity: .5;
 }
-.schedule .card-body {
+#schedule .card-body {
     padding: .5rem 1.25rem .5rem 1.25rem;
 }
 
 @media screen and (min-width:768px) {
-    .schedule {
+    #schedule {
         display: grid;
         grid-gap: 1em;
         grid-template-rows:
@@ -562,9 +562,10 @@ hr {
 #sign a:hover{
     text-decoration: none;
     color: white;
-    background-color: var(--lb);
+    /*background-color: var(--lb);*/
 }
 
+/*
 #sign #pointer-l:hover::before{
   border-right-color: var(--lb);
 }
@@ -572,7 +573,7 @@ hr {
 #sign #pointer-r:hover::before{
   border-left-color: var(--lb);
 }
-
+*/
 #sign .pole {
     background-color: var(--db);
     grid-column: 3;
