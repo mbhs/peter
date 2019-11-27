@@ -50,10 +50,10 @@
         <a class="btn btn-primary btn-lg btn-block d-sm-none" href="{% url 'activities' %}">Look at our Activities</a>
         <div id="sign">
             <div class="pole"></div>
-            <a class="left" id="pointer-l" href="{% url 'about' %}"><div><i class="fas fa-chevron-left"></i>Sponsors</div></a>
-            <a class="right" id="pointer-r" href="{% url 'activities' %}"><div>Activities<i class="fas fa-chevron-right"></i></div></a>
-            <a class="left" id="pointer-l" href="{% url 'activities' %}#schedule"><div><i class="fas fa-chevron-left"></i>Schedule</div></a>
-            <a class="right" id="pointer-r" href="{% url 'about' %}#testimonials-wrap"><div>Testimonials<i class="fas fa-chevron-right"></i></div></a>
+            <a class="left" id="pointer-l" href="{% url 'about' %}" style="grid-row: 2"><div><i class="fas fa-chevron-left"></i>Sponsors</div></a>
+            <a class="right" id="pointer-r" href="{% url 'activities' %}" style="grid-row: 4"><div>Activities<i class="fas fa-chevron-right"></i></div></a>
+            <a class="left" id="pointer-l" href="{% url 'activities' %}#schedule" style="grid-row: 6"><div><i class="fas fa-chevron-left"></i>Schedule</div></a>
+            <a class="right" id="pointer-r" href="{% url 'about' %}#testimonials-wrap" style="grid-row: 8"><div>Testimonials<i class="fas fa-chevron-right"></i></div></a>
 
         </div>
 
