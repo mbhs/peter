@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>MBHS Peter and the Wolf</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129370353-3"></script>
     <script>
@@ -13,15 +12,14 @@
       gtag('js', new Date());
       gtag('config', 'UA-129370353-3');
     </script>
-    <script src="https://kit.fontawesome.com/11bff94181.js"></script>
+    <script defer src="https://kit.fontawesome.com/11bff94181.js" crossorigin="anonymous"></script>
     {% load static %}
     <link href="https://fonts.googleapis.com/css?family=Nunito:regular,bold|Merriweather+Sans&display=swap" rel="stylesheet">
     <link rel='stylesheet' href="{% static 'core/css/bootstrap.min.css' %}" type="text/css">
     <script src="{% static 'core/js/jquery-3.3.1.min.js' %}"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
-	<script src="{% static 'core/js/bootstrap.min.js' %}"></script>
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+	<script defer src="{% static 'core/js/bootstrap.min.js' %}"></script>
     <link rel="stylesheet" type="text/css" href="{% static 'core/css/style.css' %}">
-    <script src="https://use.fontawesome.com/5f30e9efc2.js"></script>
     <link href="{% static 'core/css/aos.css' %}" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.ico' %}"/>
 </head>
@@ -35,11 +33,11 @@
                 <li class="nav-item {% if navbar == 'home' %} active {% endif %}">
                     <a class="nav-link" href="{% url 'index' %}">Home</a>
                 </li>
-                <li class="nav-item {% if navbar == 'tickets' %} active {% endif %}">
-                    <a class="nav-link" href="{% url 'tickets' %}">Tickets</a>
-                </li>
                 <li class="nav-item {% if navbar == 'activities' %} active {% endif %}">
                     <a class="nav-link" href="{% url 'activities' %}">Activities</a>
+                </li>
+                <li class="nav-item {% if navbar == 'tickets' %} active {% endif %}">
+                    <a class="nav-link" href="{% url 'tickets' %}">Tickets</a>
                 </li>
                 <li class="nav-item {% if navbar == 'about' %} active {% endif %}">
                     <a class="nav-link" href="{% url 'about' %}">About</a>
