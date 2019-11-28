@@ -2,13 +2,12 @@
 {% load static %}
 {% block content %}
 <div id="scene" data-scalar-y="0" class="fixed-top">
-    <div data-depth="0.1" class="layer"><div class="tree-r"></div></div>
-    <div data-depth="0.1" class="layer"><div class="tree-l"></div></div>
+    <div data-depth="0.1" class="layer"><div class="tree-r d-none d-md-block" ></div></div>
+    <div data-depth="0.1" class="layer"><div class="tree-l d-none d-md-block"></div></div>
 </div>
-<div class="container" id="index">
+<div class="container-fluid" id="index">
     <main>
         <h1 id="title" class="display-1">Peter and the Wolf</h1>
-        3rd annual
         <h3>Saturday, March 21 | 10AM - 1PM</h3>
         <h3><a href="http://maps.google.com/maps?q=51+University+Blvd,+Silver+Spring,+MD+20901" target="_blank">51 University Blvd E, Silver Spring, MD 20901</a></h3>
         <p class="lead">MBHS Music is proud to present Peter and the Wolf, a community music festival for children.</p>
@@ -48,6 +47,8 @@
             </div>
         <a class="btn btn-primary btn-lg btn-block d-sm-none" href="{% url 'about' %}">Check out our Sponsors</a>
         <a class="btn btn-primary btn-lg btn-block d-sm-none" href="{% url 'activities' %}">Look at our Activities</a>
+        <a class="btn btn-primary btn-lg btn-block d-sm-none" href="{% url 'activities' %}#schedule">Event Schedule</a>
+        <a class="btn btn-primary btn-lg btn-block d-sm-none" href="{% url 'about' %}#testimonials-wrap">Read Testimonials</a>
         <div id="sign">
             <div class="pole"></div>
             <a class="left" id="pointer-l" href="{% url 'about' %}" style="grid-row: 2"><div><i class="fas fa-chevron-left"></i>Sponsors</div></a>
