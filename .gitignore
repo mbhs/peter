@@ -2,5 +2,5 @@ migrations/
 db.sqlite3
 .idea/
 __pycache__/
-_DS_Store
+*.DS_Store
 venv
