@@ -4,7 +4,7 @@
     <div class="container-fluid">
         <section id="amenities">
             <div>
-                <img src="{% static 'core/img/pettingzoo.jpeg' %}" />
+                <img alt="Instrument Petting Zoo" src="{% static 'core/img/pettingzoo.jpeg' %}" />
                 <div style="left:7%; width:35%;" class="even"  data-aos="slide-right">
                     <div>
                         <h1>Instrument Petting Zoo</h1>
@@ -13,7 +13,7 @@
                 </div>
             </div>
             <div>
-                <img src="{% static 'core/img/marchingband.jpeg' %}" />
+                <img alt="Marching Band" src="{% static 'core/img/marchingband.jpeg' %}" />
                 <div style="left:65%; width:30%;" class="odd" data-aos="slide-left">
                     <div>
                         <h1>Marching Band</h1>
@@ -22,7 +22,7 @@
                 </div>
             </div>
             <div>
-                <img src="{% static 'core/img/orff.jpeg' %}" />
+                <img alt="Orff Instruments" src="{% static 'core/img/orff.jpeg' %}" />
                 <div style="left:48%; width:32%;" class="odd" data-aos="slide-left">
                     <div>
                         <h1>Orff Instruments</h1>
@@ -31,7 +31,7 @@
                 </div>
             </div>
             <div>
-                <img src="{% static 'core/img/artscrafts.jpeg' %}" />
+                <img alt="Arts and Crafts" class="lazyload" data-src="{% static 'core/img/artscrafts.jpeg' %}" />
                 <div style="left:65%; width:30%;" class="odd"  data-aos="slide-left">
                     <div>
                         <h1>Arts and Crafts</h1>
@@ -40,7 +40,7 @@
                 </div>
             </div>
             <div>
-                <img src="{% static 'core/img/facepainting.jpeg' %}" />
+                <img alt="Face Painting" class="lazyload" data-src="{% static 'core/img/facepainting.jpeg' %}" />
                 <div style="left:32%; width:30%;" class="even" data-aos="slide-right">
                     <div>
                         <h1>Face Painting</h1>
@@ -49,7 +49,7 @@
                 </div>
             </div>
             <div>
-                <img src="{% static 'core/img/cupcakewalk.jpeg' %}" />
+                <img alt="Cupcake Walk" class="lazyload" data-src="{% static 'core/img/cupcakewalk.jpeg' %}" />
                 <div style="left:65%; width:30%;" class="even"  data-aos="slide-left">
                     <div>
                         <h1>Cupcake Walk</h1>
@@ -58,8 +58,8 @@
                 </div>
             </div>
             <div>
-                <img style="width:50%;" src="{% static 'core/img/raffle.jpeg' %}" />
-                <img style="width:50%;float:right;" src="{% static 'core/img/raffle2.jpeg' %}" />
+                <img alt="Raffle" style="width:50%;" class="lazyload" data-src="{% static 'core/img/raffle.jpeg' %}" />
+                <img alt="Raffle" style="width:50%;float:right;" class="lazyload" data-src="{% static 'core/img/raffle2.jpeg' %}" />
                 <div style="left:50%; width:20%;" class="odd" data-aos="slide-left">
                     <div>
                         <h1>Raffle</h1>
@@ -68,7 +68,7 @@
                 </div>
             </div>
             <div>
-                <img src="{% static 'core/img/bakesale.jpeg' %}" />
+                <img alt="Bake Sale" class="lazyload" data-src="{% static 'core/img/bakesale.jpeg' %}" />
                 <div style="left:10%; width:25%;" class="odd"  data-aos="slide-right">
                     <div>
                         <h1>Concessions</h1>
@@ -80,7 +80,7 @@
 
         <div class="container-fluid">
             <div class="container">
-                <h2 class="display-2 text-center py-5">Schedule</h2>
+                <h2 class="display-2 text-center py-5" id="schedule-heading">Schedule</h2>
                 <div id="schedule" aria-labelledby="schedule-heading">
 
                     <span class="track-slot" aria-hidden="true" style="grid-column: track-1; grid-row: tracks;">Auditorium</span>
@@ -156,72 +156,72 @@
                 <h1 class="display-2 text-center">Meet the Orchestra</h1>
                 <div class="row justify-content-center" id="percussion">
                     <div class="col">
-                        <img onclick="playSound('{% static 'core/audio/bassdrum.mp3' %}')" src="{% static 'core/img/bassdrum.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Bass Drum</h3><p>The bass drum is a drum made out of an animal skin. It vibrates when the stretched animal skin, or drum head, is hit with a mallet.</p></div>">
+                        <img alt="Bass Drum" onclick="playSound('{% static 'core/audio/bassdrum.mp3' %}')" class="lazyload" data-src="{% static 'core/img/bassdrum.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Bass Drum</h3><p>The bass drum is a drum made out of an animal skin. It vibrates when the stretched animal skin, or drum head, is hit with a mallet.</p></div>">
                     </div>
                     <div class="col">
-                        <img onclick="playSound('{% static 'core/audio/tambourine.mp3' %}')" src="{% static 'core/img/tambourine.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Tambourine</h3><p>The tambourine makes a jingle sound. It has a lot of small cymbals that hit each other when the drum is hit. You can shake it or hit it.</p></div>">
+                        <img alt="Tambourine" onclick="playSound('{% static 'core/audio/tambourine.mp3' %}')" class="lazyload" data-src="{% static 'core/img/tambourine.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Tambourine</h3><p>The tambourine makes a jingle sound. It has a lot of small cymbals that hit each other when the drum is hit. You can shake it or hit it.</p></div>">
                     </div>
                     <div class="col">
-                        <img onclick="playSound('{% static 'core/audio/snare.mp3' %}')" src="{% static 'core/img/snare.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Snare Drum</h3><p>The snare drum sounds raspy. This is because it has a set of bent wires underneath that rattle when you hit the drum.</p></div>">
+                        <img alt="Snare Drum" onclick="playSound('{% static 'core/audio/snare.mp3' %}')" class="lazyload" data-src="{% static 'core/img/snare.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Snare Drum</h3><p>The snare drum sounds raspy. This is because it has a set of bent wires underneath that rattle when you hit the drum.</p></div>">
                     </div>
                     <div class="col">
-                        <img onclick="playSound('{% static 'core/audio/cymbals.mp3' %}')" src="{% static 'core/img/cymbals.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Cymbals</h3><p>The crash cymbals make sound by vibrating when they are hit together. They are built so they make an explosive sound that goes away quickly.</p></div>">
+                        <img alt="Cymbals" onclick="playSound('{% static 'core/audio/cymbals.mp3' %}')" class="lazyload" data-src="{% static 'core/img/cymbals.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Cymbals</h3><p>The crash cymbals make sound by vibrating when they are hit together. They are built so they make an explosive sound that goes away quickly.</p></div>">
                     </div>
                     <div class="col">
-                        <img onclick="playSound('{% static 'core/audio/castanet.mp3' %}')" src="{% static 'core/img/castanet.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Castanets</h3><p>There are two wooden halves of a castanet. It makes sound when you hit the two halves together.</p></div>">
+                        <img alt="Castanet" onclick="playSound('{% static 'core/audio/castanet.mp3' %}')" class="lazyload" data-src="{% static 'core/img/castanet.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Castanets</h3><p>There are two wooden halves of a castanet. It makes sound when you hit the two halves together.</p></div>">
                     </div>
                     <div class="col">
-                        <img onclick="playSound('{% static 'core/audio/triangle.mp3' %}')" src="{% static 'core/img/triangle.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Triangle</h3><p>The triangle makes sound by vibrating its metal frame. To play it, you hit the triangle with another piece of metal.</p></div>">
+                        <img alt="Triangle" onclick="playSound('{% static 'core/audio/triangle.mp3' %}')" class="lazyload" data-src="{% static 'core/img/triangle.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Triangle</h3><p>The triangle makes sound by vibrating its metal frame. To play it, you hit the triangle with another piece of metal.</p></div>">
                     </div>
                     <div class="col">
-                        <img onclick="playSound('{% static 'core/audio/timpani.mp3' %}')" src="{% static 'core/img/timpani.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Timpani</h3><p>The timpani are a set of drums that are tuned so they each play a certain note. You can change the note a drum plays by pressing on the pedals.</p></div>">
+                        <img alt="Timpani" onclick="playSound('{% static 'core/audio/timpani.mp3' %}')" class="lazyload" data-src="{% static 'core/img/timpani.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Timpani</h3><p>The timpani are a set of drums that are tuned so they each play a certain note. You can change the note a drum plays by pressing on the pedals.</p></div>">
                     </div>
                 </div>
                 <div class="row justify-content-center" id="brass">
                     <div class="col">
-                        <img onclick="playSound('{% static 'core/audio/horn.mp3' %}')" src="{% static 'core/img/horn.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>French Horn</h3><p>The french horn is actually the longest of the instruments. If you straightened out all of the tubing, it would be 12 feet long! It plays the part of the wolf.</p></div>">
+                        <img alt="French Horn" onclick="playSound('{% static 'core/audio/horn.mp3' %}')" class="lazyload" data-src="{% static 'core/img/horn.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>French Horn</h3><p>The french horn is actually the longest of the instruments. If you straightened out all of the tubing, it would be 12 feet long! It plays the part of the wolf.</p></div>">
                     </div>
                     <div class="col">
-                        <img onclick="playSound('{% static 'core/audio/trumpet.mp3' %}')" src="{% static 'core/img/trumpet.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Trumpet</h3><p>The trumpet is the highest brass instrument.</p></div>">
+                        <img alt="Trumpet" onclick="playSound('{% static 'core/audio/trumpet.mp3' %}')" class="lazyload" data-src="{% static 'core/img/trumpet.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Trumpet</h3><p>The trumpet is the highest brass instrument.</p></div>">
                     </div>
                     <div class="col">
-                        <img onclick="playSound('{% static 'core/audio/trombone.mp3' %}')" src="{% static 'core/img/trombone.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Trombone</h3><p>The trombone doesn't have any valves. It changes notes by pulling the big slide in and out.</p></div>">
+                        <img alt="Trombone" onclick="playSound('{% static 'core/audio/trombone.mp3' %}')" class="lazyload" data-src="{% static 'core/img/trombone.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Trombone</h3><p>The trombone doesn't have any valves. It changes notes by pulling the big slide in and out.</p></div>">
                     </div>
                 </div>
                 <div class="row justify-content-center" id="ww">
                     <div class="col">
-                        <img onclick="playSound('{% static 'core/audio/bassoon.mp3' %}')" src="{% static 'core/img/bassoon.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Bassoon</h3><p>The bassoon is a double reed instrument, like the oboe.</p></div>">
+                        <img alt="Bassoon" onclick="playSound('{% static 'core/audio/bassoon.mp3' %}')" class="lazyload" data-src="{% static 'core/img/bassoon.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Bassoon</h3><p>The bassoon is a double reed instrument, like the oboe.</p></div>">
                     </div>
                     <div class="col">
-                        <img onclick="playSound('{% static 'core/audio/clarinet.mp3' %}')" src="{% static 'core/img/clarinet.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Clarinet</h3><p>The clarinet is a single reed instrument. It plays the part of the cat.</p></div>">
+                        <img alt="Clarinet" onclick="playSound('{% static 'core/audio/clarinet.mp3' %}')" class="lazyload" data-src="{% static 'core/img/clarinet.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Clarinet</h3><p>The clarinet is a single reed instrument. It plays the part of the cat.</p></div>">
                     </div>
                     <div class="col">
-                        <img onclick="playSound('{% static 'core/audio/oboe.mp3' %}')" src="{% static 'core/img/oboe.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Oboe</h3><p>The oboe is a double reed instrument, like the bassoon. It plays the part of the duck.</p></div>">
+                        <img alt="Oboe" onclick="playSound('{% static 'core/audio/oboe.mp3' %}')" class="lazyload" data-src="{% static 'core/img/oboe.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Oboe</h3><p>The oboe is a double reed instrument, like the bassoon. It plays the part of the duck.</p></div>">
                     </div>
                     <div class="col">
-                        <img onclick="playSound('{% static 'core/audio/flute.mp3' %}')" src="{% static 'core/img/flute.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Flute</h3><p>The flute is the highest instrument in the orchestra. It plays the part of the bird.</p></div>">
+                        <img alt="Flute" onclick="playSound('{% static 'core/audio/flute.mp3' %}')" class="lazyload" data-src="{% static 'core/img/flute.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Flute</h3><p>The flute is the highest instrument in the orchestra. It plays the part of the bird.</p></div>">
                     </div>
                 </div>
                 <div class="row justify-content-center" id="strings">
                     <div class="col-1"></div>
                     <div class="col">
-                        <img onclick="playSound('{% static 'core/audio/violin.mp3' %}')" class="float-right" id="violins" src="{% static 'core/img/violins.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Violin</h3><p>The violin is the smallest and highest string instrument. The player puts with the violin under their chin to play. The violins usually play two different parts.</p></div>">
+                        <img alt="Violin" onclick="playSound('{% static 'core/audio/violin.mp3' %}')" class="float-right lazyload" id="violins" data-src="{% static 'core/img/violins.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Violin</h3><p>The violin is the smallest and highest string instrument. The player puts with the violin under their chin to play. The violins usually play two different parts.</p></div>">
                     </div>
                     <div class="col">
                         <div class="row h-50">
                             <div class="col">
-                                <img onclick="playSound('{% static 'core/audio/viola.mp3' %}')" id="violas" class="float-left" src="{% static 'core/img/violas.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Viola</h3><p>The viola is slightly larger than the violin, but is played the same way. It plays lower notes because the strings are longer.</p></div>">
+                                <img alt="Viola" onclick="playSound('{% static 'core/audio/viola.mp3' %}')" id="violas" class="float-left lazyload" data-src="{% static 'core/img/violas.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Viola</h3><p>The viola is slightly larger than the violin, but is played the same way. It plays lower notes because the strings are longer.</p></div>">
                             </div>
                         </div>
                         <div class="row h-50">
                             <div class="col" id="stand">
-                                <img src="{% static 'core/img/stand.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Conductor</h3><p>The conductor leads the orchestra. They don't play an instrument, but they use a baton to show the other people when to play.</p></div>">
+                                <img alt="Conductor" class="lazyload" data-src="{% static 'core/img/stand.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Conductor</h3><p>The conductor leads the orchestra. They don't play an instrument, but they use a baton to show the other people when to play.</p></div>">
                             </div>
                             <div class="col" id="cellos">
-                                <img onclick="playSound('{% static 'core/audio/cello.mp3' %}')" src="{% static 'core/img/cellos.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Cello</h3><p>The cello is lower than the viola, and a lot bigger. It is so big that it rests on the floor on its endpin.</p></div>">
+                                <img alt="Cello" onclick="playSound('{% static 'core/audio/cello.mp3' %}')" class="lazyload" data-src="{% static 'core/img/cellos.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Cello</h3><p>The cello is lower than the viola, and a lot bigger. It is so big that it rests on the floor on its endpin.</p></div>">
                             </div>
                             <div class="col" id="basses">
-                                <img onclick="playSound('{% static 'core/audio/bass.mp3' %}')" src="{% static 'core/img/basses.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Bass</h3><p>The string bass, or double bass, is the lowest string instrument in the orchestra.</p></div>">
+                                <img alt="String Bass" onclick="playSound('{% static 'core/audio/bass.mp3' %}')" class="lazyload" data-src="{% static 'core/img/basses.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Bass</h3><p>The string bass, or double bass, is the lowest string instrument in the orchestra.</p></div>">
                             </div>
                         </div>
                     </div>
@@ -261,4 +261,5 @@
             });
         })
     </script>
+    <script src="{% static 'core/js/lazysizes.min.js' %}" async></script>
 {% endblock %}
