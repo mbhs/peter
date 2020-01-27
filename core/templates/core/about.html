@@ -1,17 +1,19 @@
 {% extends "core/base.html" %}
+{% load i18n %}
 {% load static %}
 {% block content %}
     <div class="container-fluid" id="about">
         <div class="container">
-            <h1 class="display-2 text-center">About Us</h1>
+            <h1 class="display-2 text-center">{% trans "About Us" %}</h1>
+
 
             <div class="row">
                 <div class="col">
                     <div class="card">
                       <div class="card-body">
-                        <h2 class="card-title">BBOPS</h2>
-                        <p class="card-text">The Blair Band and Orchestra Patrons is the booster organization that supports Montgomery Blair High School’s Instrumental Music Program. We created the Community Festival Series (Carnival of the Animals and Peter and the Wolf) in part as a fundraiser, but also so our teens could share their love of music with the next generation of possible musicians. Many of our teens were introduced to music through events like these and we are so very happy to give them a way to pay it forward! We all remember what it’s like to parent young children and we hope we have created an an affordable day that brings joy to you and your children.</p>
-                        <a href="http://mbhsmusic.com/bbops.html" target="_blank" class="btn btn-primary">Visit our Homepage</a>
+                        <h2 class="card-title">{% trans "BBOPS" %}</h2>
+                        <p class="card-text">{% trans "The Blair Band and Orchestra Patrons is the booster organization that supports Montgomery Blair High School’s Instrumental Music Program. We created the Community Festival Series (Carnival of the Animals and Peter and the Wolf) in part as a fundraiser, but also so our teens could share their love of music with the next generation of possible musicians. Many of our teens were introduced to music through events like these and we are so very happy to give them a way to pay it forward! We all remember what it’s like to parent young children and we hope we have created an an affordable day that brings joy to you and your children." %}</p>
+                        <a href="http://mbhsmusic.com/bbops.html" target="_blank" class="btn btn-primary">{% trans "Visit our Homepage"%}</a>
                       </div>
                     </div>
                 </div>
@@ -20,88 +22,101 @@
                 <div class="col">
                     <div class="card">
                       <div class="card-body">
-                        <h2 class="card-title">Contact</h2>
-                        <p class="card-text">Email us at <a href="mailto:blairmusic2020@gmail.com">blairmusic2020@gmail.com</a></p>
+                        <h2 class="card-title">{% trans "Contact"%}</h2>
+                        <p class="card-text">{% trans "Email us at "%}<a href="mailto:blairmusic2020@gmail.com">blairmusic2020@gmail.com</a></p>
                       </div>
                     </div>
                 </div>
             </div>
-            <h1 class="display-2 text-center">Sponsors</h1>
+            <h1 class="display-2 text-center">{% trans "Sponsors"%}</h1>
 
             <div class="row">
-                <div class="col">
+               <!-- <div class="col-md">
                     <div class="card">
                       <div class="card-body">
-                        <h2 class="card-title"><a href="https://ismw.org/" target="_blank">International School of
-                            Music</a></h2>
-                        <p class="card-text">ISM is blank</p>
+                        <h2 class="card-title">{% trans "Bronze"%}</h2>
+
+                        <p class="card-text"><a href="https://ismw.org/" target="_blank">International School of
+                            Music</a></p>
+
+                        <p class="card-text">    <a href="https://www.musicarts.com" target="_blank">Music and Arts</a></p>
                       </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-md">
                     <div class="card">
                       <div class="card-body">
-                        <h2 class="card-title">Raffle Donors</h2>
-                        <p class="card-text">Cello Summer camp</p>
+                        <h2 class="card-title">{% trans "Silver"%}</h2>
+                        <p class="card-text"></p>
+                      </div>
+                    </div>
+                </div>-->
+                <div class="col-md">
+                    <div class="card">
+                      <div class="card-body">
+                        <!--<h2 class="card-title">{% trans "Gold"%}</h2>-->
+                        <p class="card-text"></p>
+                          <a href="https://ismw.org/" target="_blank"><img src="{% static 'core/img/ism.png' %}" class="img-fluid" alt="International School of Music"></a>
+                          <a href="https://www.musicarts.com" target="_blank"><img src="{% static 'core/img/musicarts.png' %}" class="img-fluid" alt="Music and Arts"></a>
                       </div>
                     </div>
                 </div>
             </div>
             <div id="testimonials-wrap">
-                <h1 class="display-2 text-center">Testimonials</h1>
+                <h1 class="display-2 text-center">{% trans "Testimonials"%}</h1>
                 <div class="talkbubble-l card" data-aos="fade-right">
                     <div class="card-body">
-                        <p class="card-text">My children LOVED this event. They had a blast playing the band instruments and getting faces painted. </p>
+                        <p class="card-text">{% trans "My children LOVED this event. They had a blast playing the band instruments and getting faces painted."%} </p>
                     </div>
                 </div>
                 <div class="talkbubble-r card" data-aos="fade-left">
                     <div class="card-body">
-                        <p class="card-text">The high schoolers were sweet and engaging with the children. Great job! We will be back!</p>
+                        <p class="card-text">{% trans "The high schoolers were sweet and engaging with the children. Great job! We will be back!"%}</p>
                     </div>
                 </div>
                 <div class="talkbubble-l card" data-aos="fade-right">
                     <div class="card-body">
-                        <p class="card-text">The orchestral performance was stunning! </p>
+                        <p class="card-text">{% trans "The orchestral performance was stunning! "%}</p>
                     </div>
                 </div>
                 <div class="talkbubble-r card" data-aos="fade-left">
                     <div class="card-body">
-                        <p class="card-text">Instrument petting zoos were fabulous! </p>
+                        <p class="card-text">{% trans "Instrument petting zoos were fabulous!"%} </p>
                     </div>
                 </div>
                 <div class="talkbubble-l card" data-aos="fade-right">
                     <div class="card-body">
-                        <p class="card-text">My eldest loved the drumming session.  </p>
+                        <p class="card-text">{% trans "My eldest loved the drumming session."%}  </p>
                     </div>
                 </div>
                 <div class="talkbubble-r card" data-aos="fade-left">
                     <div class="card-body">
-                        <p class="card-text">All the students we interacted with while our son tried the instruments were lovely.</p>
+                        <p class="card-text">{% trans "All the students we interacted with while our son tried the instruments were lovely."%}</p>
                     </div>
                 </div>
                 <div class="talkbubble-l card" data-aos="fade-right">
                     <div class="card-body">
-                        <p class="card-text">The students and staff were so patient, kind and helpful</p>
+                        <p class="card-text">{% trans "The students and staff were so patient, kind and helpful"%}</p>
                     </div>
                 </div>
                 <div class="talkbubble-r card" data-aos="fade-left">
                     <div class="card-body">
-                        <p class="card-text">Every single teenager was so friendly and eager to share their instrument. </p>
+                        <p class="card-text">{% trans "Every single teenager was so friendly and eager to share their instrument."%} </p>
                     </div>
                 </div>
                 <div class="talkbubble-l card" data-aos="fade-right">
                     <div class="card-body">
-                        <p class="card-text">What a delightful way to spend the afternoon! The students are so talented and the activities were lots of fun for our kids.</p>
+                        <p class="card-text">{% trans "What a delightful way to spend the afternoon! The students are so talented and the activities were lots of fun for our kids."%}</p>
                     </div>
                 </div>
                 <div class="talkbubble-r card" data-aos="fade-left">
                     <div class="card-body">
-                        <p class="card-text">The Carnival was amazing - the students put on a great show. </p>
+                        <p class="card-text">{% trans "The Carnival was amazing - the students put on a great show."%} </p>
                     </div>
                 </div>
                 <div class="talkbubble-l card" data-aos="fade-right">
                     <div class="card-body">
-                        <p class="card-text">Event was really well-organized so all ages had fun - my 7 and 11 year old already asked to go again next year!</p>
+                        <p class="card-text">{% trans "Event was really well-organized so all ages had fun - my 7 and 11 year old already asked to go again next year!"%}</p>
                     </div>
                 </div>
             </div>

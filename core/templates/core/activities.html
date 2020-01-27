@@ -1,4 +1,5 @@
 {% extends "core/base.html" %}
+{% load i18n %}
 {% load static %}
 {% block content %}
     <div class="container-fluid">
@@ -7,8 +8,8 @@
                 <img alt="Instrument Petting Zoo" src="{% static 'core/img/pettingzoo.jpeg' %}" />
                 <div style="left:7%; width:35%;" class="even"  data-aos="slide-right">
                     <div>
-                        <h1>Instrument Petting Zoo</h1>
-                        <p> Member of Blair Bands and Orchestras will be on hand with their instruments so kids can see them, learn about them, and can try them out. We expect to have a full compliment of band and orchestra instruments, as well as pianos. This is something the National Symphony Orchestra does, but it costs way more and is all the way downtown!  </p>
+                        <h1>{% trans "Instrument Petting Zoo"%}</h1>
+                        <p>{% trans " Member of Blair Bands and Orchestras will be on hand with their instruments so kids can see them, learn about them, and can try them out. We expect to have a full compliment of band and orchestra instruments, as well as pianos. This is something the National Symphony Orchestra does, but it costs way more and is all the way downtown!"%}  </p>
                     </div>
                 </div>
             </div>
@@ -16,8 +17,8 @@
                 <img alt="Marching Band" src="{% static 'core/img/marchingband.jpeg' %}" />
                 <div style="left:65%; width:30%;" class="odd" data-aos="slide-left">
                     <div>
-                        <h1>Marching Band</h1>
-                        <p>The festival will also feature the MBHS Marching Band showcase and two fifteen minute performances at 10:15 and 11:30. Make sure you catch them!</p>
+                        <h1>{% trans "Marching Band"%}</h1>
+                        <p>{% trans "The festival will also feature the MBHS Marching Band showcase and two fifteen minute performances at 10:15 and 11:30. Make sure you catch them!"%}</p>
                     </div>
                 </div>
             </div>
@@ -25,8 +26,8 @@
                 <img alt="Orff Instruments" class="lazyload" data-src="{% static 'core/img/orff.jpeg' %}" />
                 <div style="left:48%; width:32%;" class="odd" data-aos="slide-left">
                     <div>
-                        <h1>Orff Instruments</h1>
-                        <p>Orff Group Drumming Lesson for kids 7 and up! Offered at 10:30 and 12:15. </p>
+                        <h1>{% trans "Orff Instruments"%}</h1>
+                        <p>{% trans "Orff Group Drumming Lesson for kids 7 and up! Offered at 10:30 and 12:15."%} </p>
                     </div>
                 </div>
             </div>
@@ -34,8 +35,8 @@
                 <img alt="Arts and Crafts" class="lazyload" data-src="{% static 'core/img/artscrafts.jpeg' %}" />
                 <div style="left:65%; width:30%;" class="odd"  data-aos="slide-left">
                     <div>
-                        <h1>Arts and Crafts</h1>
-                        <p>We will have several stations featuring coloring, word searches, origami, puzzles, crafts and instrument making. </p>
+                        <h1>{% trans "Arts and Crafts"%}</h1>
+                        <p>{% trans "We will have several stations featuring coloring, word searches, origami, puzzles, crafts and instrument making."%} </p>
                     </div>
                 </div>
             </div>
@@ -43,8 +44,8 @@
                 <img alt="Face Painting" class="lazyload" data-src="{% static 'core/img/facepainting.jpeg' %}" />
                 <div style="left:32%; width:30%;" class="even" data-aos="slide-right">
                     <div>
-                        <h1>Face Painting</h1>
-                        <p>The festival will feature face-painting, allowing your child to express their creativity in a fun and delightful manner! All materials are 100% safe and we will have trained volunteers on-hand for assistance. </p>
+                        <h1>{% trans "Face Painting"%}</h1>
+                        <p>{% trans "The festival will feature face-painting, allowing your child to express their creativity in a fun and delightful manner! All materials are 100% safe and we will have trained volunteers on-hand for assistance."%} </p>
                     </div>
                 </div>
             </div>
@@ -52,8 +53,8 @@
                 <img alt="Cupcake Walk" class="lazyload" data-src="{% static 'core/img/cupcakewalk.jpeg' %}" />
                 <div style="left:65%; width:30%;" class="even"  data-aos="slide-left">
                     <div>
-                        <h1>Cupcake Walk</h1>
-                        <p>Don't miss the chance to win a cupcake! The game begins when the music starts; children walk around in a circle as the music is playing. When the music stops, the children stop. A volunteer will call out a carnival image and the child standing on the corresponding image wins a cupcake! </p>
+                        <h1>{% trans "Cupcake Walk"%}</h1>
+                        <p>{% trans "Don't miss the chance to win a cupcake! The game begins when the music starts; children walk around in a circle as the music is playing. When the music stops, the children stop. A volunteer will call out a carnival image and the child standing on the corresponding image wins a cupcake!"%} </p>
                     </div>
                 </div>
             </div>
@@ -62,8 +63,8 @@
                 <img alt="Raffle" style="width:50%;float:right;" class="lazyload" data-src="{% static 'core/img/raffle2.jpeg' %}" />
                 <div style="left:50%; width:20%;" class="odd" data-aos="slide-left">
                     <div>
-                        <h1>Raffle</h1>
-                        <p>The raffle will be called after each orchestra performance. Prizes may include books, instruments, music lessons, and camp registration!</p>
+                        <h1>{% trans "Raffle"%}</h1>
+                        <p>{% trans "The raffle will be called after each orchestra performance. Prizes may include books, instruments, music lessons, and camp registration!"%}</p>
                     </div>
                 </div>
             </div>
@@ -71,8 +72,8 @@
                 <img alt="Bake Sale" class="lazyload" data-src="{% static 'core/img/bakesale.jpeg' %}" />
                 <div style="left:10%; width:25%;" class="odd"  data-aos="slide-right">
                     <div>
-                        <h1>Concessions</h1>
-                        <p>We will have a concessions table with snacks, baked goods and drinks for sale. All proceeds go towards funding Blair Instrumental Music and help support events such as this one.</p>
+                        <h1>{% trans "Concessions"%}</h1>
+                        <p>{% trans "We will have a concessions table with snacks, baked goods and drinks for sale. All proceeds go towards funding Blair Instrumental Music and help support events such as this one."%}</p>
                     </div>
                 </div>
             </div>
@@ -80,41 +81,41 @@
 
         <div class="container-fluid">
             <div class="container">
-                <h2 class="display-2 text-center py-5" id="schedule-heading">Schedule</h2>
+                <h2 class="display-2 text-center py-5" id="schedule-heading">{% trans "Schedule"%}</h2>
                 <div id="schedule" aria-labelledby="schedule-heading">
 
-                    <span class="track-slot" aria-hidden="true" style="grid-column: track-1; grid-row: tracks;">Auditorium</span>
-                    <span class="track-slot" aria-hidden="true" style="grid-column: track-2; grid-row: tracks;">Orff Room</span>
-                    <span class="track-slot" aria-hidden="true" style="grid-column: track-3; grid-row: tracks;">Ongoing</span>
+                    <span class="track-slot" aria-hidden="true" style="grid-column: track-1; grid-row: tracks;">{% trans "Auditorium"%}</span>
+                    <span class="track-slot" aria-hidden="true" style="grid-column: track-2; grid-row: tracks;">{% trans "Orff Room"%}</span>
+                    <span class="track-slot" aria-hidden="true" style="grid-column: track-3; grid-row: tracks;">{% trans "Ongoing"%}</span>
 
                     <h2 class="time-slot" style="grid-row: time-1000;">10:00am</h2>
 
                     <div class="card" style="grid-column: track-3; grid-row: time-1000 / time-1245;">
                       <div class="card-body">
                         <p class="card-text">10:00 - 12:45</p>
-                        <h5 class="card-title">Ongoing Festivities: Instrument Petting Zoo, Face Painting, Bake Sale</h5>
+                        <h5 class="card-title">{% trans "Ongoing Festivities: Instrument Petting Zoo, Face Painting, Bake Sale"%}</h5>
                       </div>
                     </div>
 
                     <div class="card" style="grid-column: track-1; grid-row: time-1015 / time-1030;">
                       <div class="card-body">
                         <p class="card-text">10:15 - 10:30</p>
-                        <h5 class="card-title">Marching Band Performance</h5>
-                        <h5 class="card-title">Raffle Drawing 1</h5>
+                        <h5 class="card-title">{% trans "Marching Band Performance"%}</h5>
+                        <h5 class="card-title">{% trans "Raffle Drawing 1"%}</h5>
                       </div>
                     </div>
 
                     <div class="card" style="grid-column: track-2; grid-row: time-1030 / time-1100;">
                       <div class="card-body">
                           <p class="card-text">10:30 - 11:00</p>
-                        <h5 class="card-title">Orff Group Drumming Lesson</h5>
+                        <h5 class="card-title">{% trans "Orff Group Drumming Lesson"%}</h5>
                       </div>
                     </div>
 
                     <div class="card" style="grid-column: track-1; grid-row: time-1045 / time-1115;">
                       <div class="card-body">
                           <p class="card-text">10:45 - 11:15</p>
-                        <h5 class="card-title">Peter and the Wolf Performance</h5>
+                        <h5 class="card-title">{% trans "Peter and the Wolf Performance"%}</h5>
                       </div>
                     </div>
 
@@ -124,8 +125,8 @@
                     <div class="card" style="grid-column: track-1; grid-row: time-1130 / time-1145;">
                       <div class="card-body">
                           <p class="card-text">11:30 - 11:45</p>
-                        <h5 class="card-title">Marching Band Performance</h5>
-                        <h5 class="card-title">Raffle Drawing 2</h5>
+                        <h5 class="card-title">{% trans "Marching Band Performance"%}</h5>
+                        <h5 class="card-title">{% trans "Raffle Drawing 2"%}</h5>
                       </div>
                     </div>
 
@@ -134,14 +135,14 @@
                     <div class="card" style="grid-column: track-1; grid-row: time-1200 / time-1230;">
                       <div class="card-body">
                           <p class="card-text">12:00 - 12:30</p>
-                        <h5 class="card-title">Peter and the Wolf Performance</h5>
+                        <h5 class="card-title">{% trans "Peter and the Wolf Performance"%}</h5>
                       </div>
                     </div>
 
                     <div class="card" style="grid-column: track-2; grid-row: time-1215 / time-1245;">
                       <div class="card-body">
                           <p class="card-text">12:15 - 12:45</p>
-                        <h5 class="card-title">Orff Group Drumming Lesson</h5>
+                        <h5 class="card-title">{% trans "Orff Group Drumming Lesson"%}</h5>
                       </div>
                     </div>
                 </div>
@@ -153,7 +154,8 @@
 
         <div class="container-fluid orch-wrap">
             <div id="orchestra" class="container">
-                <h1 class="display-2 text-center">Meet the Orchestra</h1>
+                <h1 class="display-2 text-center">{% trans "Meet the Orchestra"%}</h1>
+                <h2 class="text-center">{% trans "Click to hear each instrument!"%}</h2>
                 <div class="row justify-content-center" id="percussion">
                     <div class="col">
                         <img alt="Bass Drum" onclick="playSound('{% static 'core/audio/bassdrum.mp3' %}')" class="lazyload" data-src="{% static 'core/img/bassdrum.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Bass Drum</h3><p>The bass drum is a drum made out of an animal skin. It vibrates when the stretched animal skin, or drum head, is hit with a mallet.</p></div>">
@@ -166,9 +168,6 @@
                     </div>
                     <div class="col">
                         <img alt="Cymbals" onclick="playSound('{% static 'core/audio/cymbals.mp3' %}')" class="lazyload" data-src="{% static 'core/img/cymbals.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Cymbals</h3><p>The crash cymbals make sound by vibrating when they are hit together. They are built so they make an explosive sound that goes away quickly.</p></div>">
-                    </div>
-                    <div class="col">
-                        <img alt="Castanet" onclick="playSound('{% static 'core/audio/castanet.mp3' %}')" class="lazyload" data-src="{% static 'core/img/castanet.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Castanets</h3><p>There are two wooden halves of a castanet. It makes sound when you hit the two halves together.</p></div>">
                     </div>
                     <div class="col">
                         <img alt="Triangle" onclick="playSound('{% static 'core/audio/triangle.mp3' %}')" class="lazyload" data-src="{% static 'core/img/triangle.png' %}" data-toggle="tooltip" data-html="true" title="<div class='instrument-info'><h3>Triangle</h3><p>The triangle makes sound by vibrating its metal frame. To play it, you hit the triangle with another piece of metal.</p></div>">

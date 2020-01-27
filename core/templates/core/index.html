@@ -1,4 +1,5 @@
 {% extends "core/base.html" %}
+{% load i18n %}
 {% load static %}
 {% block content %}
 <div id="scene" data-scalar-y="0" class="fixed-top">
@@ -7,54 +8,54 @@
 </div>
 <div class="container-fluid" id="index">
     <main>
-        <h1 id="title" class="display-1">Peter and the Wolf</h1>
-        <h3>Saturday, March 21 | 10AM - 1PM</h3>
+        <h1 id="title" class="display-1">{% trans "Peter and the Wolf"%}</h1>
+        <h3>{% trans "Saturday, March 21 | 10AM - 1PM"%}</h3>
         <h3><a href="http://maps.google.com/maps?q=51+University+Blvd,+Silver+Spring,+MD+20901" target="_blank">51 University Blvd E, Silver Spring, MD 20901</a></h3>
-        <p class="lead">MBHS Music is proud to present Peter and the Wolf, a community music festival for children.</p>
+        <p class="lead">{% trans "MBHS Music is proud to present Peter and the Wolf, a community music festival for children."%}</p>
         <!--Check out what's going on at the event,
         buttons-->
         <div id="testimonials" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <p>"My son is 3 years old, and he really enjoys music. It was wonderful to watch his curiosity come alive at Carnival of the Animals."
+                  <p>{% trans "&quot;My son is 3 years old, and he really enjoys music. It was wonderful to watch his curiosity come alive at Carnival of the Animals.&quot;"%}
                 </p>
                 </div>
                 <div class="carousel-item">
-                    <p>"The students were delightful and the event was a huge success. $5 was a bargain!"
+                    <p>{% trans "&quot;The students were delightful and the event was a huge success. $5 was a bargain!&quot;"%}
                 </p>
                 </div>
                 <div class="carousel-item">
-                  <p>"The reed he got to keep is in his box of prized treasures!"
+                  <p>{% trans "&quot;The reed he got to keep is in his box of prized treasures!&quot;"%}
                 </p>
                 </div>
                 <div class="carousel-item">
-                  <p>"I was particularly impressed with the students as they encouraged the children to play and handle their instruments."
+                  <p>{% trans "&quot;I was particularly impressed with the students as they encouraged the children to play and handle their instruments.&quot;"%}
                 </p>
                 </div>
                 <div class="carousel-item">
-                  <p>"This was truly an amazing event that should become a tradition!"
+                  <p>{% trans "&quot;This was truly an amazing event that should become a tradition!&quot;"%}
                 </p>
                 </div>
                 <div class="carousel-item">
-                  <p>"I can’t believe this was your first time. It was really terrific."
+                  <p>{% trans "&quot;I can’t believe this was your first time. It was really terrific.&quot;"%}
                 </p>
                 </div>
                 <div class="carousel-item">
-                  <p>"We loved the event and we will recommend it to all our neighbors next year!"
+                  <p>{% trans "&quot;We loved the event and we will recommend it to all our neighbors next year!&quot;"%}
                       </p>
                 </div>
               </div>
             </div>
-        <a class="btn btn-primary btn-lg btn-block d-sm-none" href="{% url 'about' %}">Check out our Sponsors</a>
-        <a class="btn btn-primary btn-lg btn-block d-sm-none" href="{% url 'activities' %}">Look at our Activities</a>
-        <a class="btn btn-primary btn-lg btn-block d-sm-none" href="{% url 'activities' %}#schedule">Event Schedule</a>
-        <a class="btn btn-primary btn-lg btn-block d-sm-none" href="{% url 'about' %}#testimonials-wrap">Read Testimonials</a>
+        <a class="btn btn-primary btn-lg btn-block d-sm-none" href="{% url 'about' %}">{% trans "Check out our Sponsors"%}</a>
+        <a class="btn btn-primary btn-lg btn-block d-sm-none" href="{% url 'activities' %}">{% trans "Look at our Activities"%}</a>
+        <a class="btn btn-primary btn-lg btn-block d-sm-none" href="{% url 'activities' %}#schedule">{% trans "Event Schedule"%}</a>
+        <a class="btn btn-primary btn-lg btn-block d-sm-none" href="{% url 'about' %}#testimonials-wrap">{% trans "Read Testimonials"%}</a>
         <div id="sign">
             <div class="pole"></div>
-            <a class="left" id="pointer-l" href="{% url 'about' %}" style="grid-row: 2"><div><i class="fas fa-chevron-left"></i>Sponsors</div></a>
-            <a class="right" id="pointer-r" href="{% url 'activities' %}" style="grid-row: 4"><div>Activities<i class="fas fa-chevron-right"></i></div></a>
-            <a class="left" id="pointer-l" href="{% url 'activities' %}#schedule" style="grid-row: 6"><div><i class="fas fa-chevron-left"></i>Schedule</div></a>
-            <a class="right" id="pointer-r" href="{% url 'about' %}#testimonials-wrap" style="grid-row: 8"><div>Testimonials<i class="fas fa-chevron-right"></i></div></a>
+            <a class="left" id="pointer-l" href="{% url 'about' %}" style="grid-row: 2"><div><i class="fas fa-chevron-left"></i>{% trans "Sponsors"%}</div></a>
+            <a class="right" id="pointer-r" href="{% url 'activities' %}" style="grid-row: 4"><div>{% trans "Activities"%}<i class="fas fa-chevron-right"></i></div></a>
+            <a class="left" id="pointer-l" href="{% url 'activities' %}#schedule" style="grid-row: 6"><div><i class="fas fa-chevron-left"></i>{% trans "Schedule"%}</div></a>
+            <a class="right" id="pointer-r" href="{% url 'about' %}#testimonials-wrap" style="grid-row: 8"><div>{% trans "Testimonials"%}<i class="fas fa-chevron-right"></i></div></a>
 
         </div>
 

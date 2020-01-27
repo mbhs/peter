@@ -1,3 +1,4 @@
+{% load i18n %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,9 +22,10 @@
     <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="{% static 'core/css/style.css' %}">
     <link preload href="{% static 'core/css/aos.css' %}" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.ico' %}"/>
+    <link rel="shortcut icon" type="image/png" href="{% static 'core/img/favicon.ico' %}"/>
 </head>
 <body>
+
     <nav class="navbar navbar-expand-sm navbar-light justify-content-center">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -42,7 +44,30 @@
                 <li class="nav-item {% if navbar == 'about' %} active {% endif %}">
                     <a class="nav-link" href="{% url 'about' %}">About</a>
                 </li>
+            <!--
+                <li>
+                    <form action="{% url 'set_language' %}" method="post" class="nav-item">
+                        {% csrf_token %}
+                        <input name="next" type="hidden" value="{{ redirect_to }}" />
+                        {% get_current_language as LANGUAGE_CODE %}
+                        {% get_available_languages as LANGUAGES %}
+                        {% get_language_info_list for LANGUAGES as languages %}
+                        {% for language in languages %}
+                            {% if language.code != LANGUAGE_CODE %}
+                                <button type="submit" name="language" value="{{ language.code }}" style="background: none; border: none" class="nav-link">
+                                    {{ language.name_local }}
+                                </button>
+                            {% endif %}
+                        {% endfor %}
+                    </form>
+
+                </li>-->
+
+
+
             </ul>
+
+
         </div>
     </nav>
     {% block content %}{% endblock %}
