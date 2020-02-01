@@ -4,30 +4,7 @@
 {% block content %}
     <div class="container-fluid" id="about">
         <div class="container">
-            <h1 class="display-2 text-center">{% trans "About Us" %}</h1>
 
-
-            <div class="row">
-                <div class="col">
-                    <div class="card">
-                      <div class="card-body">
-                        <h2 class="card-title">{% trans "BBOPS" %}</h2>
-                        <p class="card-text">{% trans "The Blair Band and Orchestra Patrons is the booster organization that supports Montgomery Blair High School’s Instrumental Music Program. We created the Community Festival Series (Carnival of the Animals and Peter and the Wolf) in part as a fundraiser, but also so our teens could share their love of music with the next generation of possible musicians. Many of our teens were introduced to music through events like these and we are so very happy to give them a way to pay it forward! We all remember what it’s like to parent young children and we hope we have created an an affordable day that brings joy to you and your children." %}</p>
-                        <a href="http://mbhsmusic.com/bbops.html" target="_blank" class="btn btn-primary">{% trans "Visit our Homepage"%}</a>
-                      </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="card">
-                      <div class="card-body">
-                        <h2 class="card-title">{% trans "Contact"%}</h2>
-                        <p class="card-text">{% trans "Email us at "%}<a href="mailto:blairmusic2020@gmail.com">blairmusic2020@gmail.com</a></p>
-                      </div>
-                    </div>
-                </div>
-            </div>
             <h1 class="display-2 text-center" id="sponsors">{% trans "Sponsors"%}</h1>
 
             <div class="row">
@@ -53,15 +30,50 @@
                 </div>-->
                 <div class="col-md">
                     <div class="card">
-                      <div class="card-body">
+                        <div class="card-body">
                         <!--<h2 class="card-title">{% trans "Gold"%}</h2>-->
-                        <p class="card-text"></p>
-                          <a href="https://ismw.org/" target="_blank"><img src="{% static 'core/img/ism.png' %}" class="img-fluid" alt="International School of Music"></a>
-                          <a href="https://www.musicarts.com" target="_blank"><img src="{% static 'core/img/musicarts.png' %}" class="img-fluid" alt="Music and Arts"></a>
+                            <div class="row">
+                                <div class="col-md">
+                                    <a href="https://ismw.org/" target="_blank"><img src="{% static 'core/img/ism.png' %}" class="img-fluid" alt="International School of Music"></a>
+                                </div>
+                                <div class="col-md">
+                                    <a href="https://www.musicarts.com" target="_blank"><img src="{% static 'core/img/musicarts.png' %}" class="img-fluid" alt="Music and Arts"></a>
+                                </div>
+                                <div class="col-md">
+                                    <a href="https://www.roundhousetheatre.org" target="_blank"><img src="{% static 'core/img/roundhouse.svg' %}" class="img-fluid" alt="Roundhouse Theatre"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <h1 class="display-2 text-center">{% trans "About Us" %}</h1>
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                      <div class="card-body">
+                        <h2 class="card-title">{% trans "BBOPS" %}</h2>
+                        <p class="card-text">{% trans "The Blair Band and Orchestra Patrons is the booster organization that supports Montgomery Blair High School’s Instrumental Music Program. We created the Community Festival Series (Carnival of the Animals and Peter and the Wolf) in part as a fundraiser, but also so our teens could share their love of music with the next generation of possible musicians. Many of our teens were introduced to music through events like these and we are so very happy to give them a way to pay it forward! We all remember what it’s like to parent young children and we hope we have created an an affordable day that brings joy to you and your children." %}</p>
+                        <a href="http://mbhsmusic.com/bbops.html" target="_blank" class="btn btn-primary">{% trans "Visit our Homepage"%}</a>
                       </div>
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                      <div class="card-body">
+                        <h2 class="card-title">{% trans "Contact"%}</h2>
+                        <p class="card-text">{% trans "Email us at "%}<a href="mailto:blairmusic2020@gmail.com">blairmusic2020@gmail.com</a></p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+
             <div id="testimonials-wrap">
                 <h1 class="display-2 text-center">{% trans "Testimonials"%}</h1>
                 <div class="talkbubble-l card" data-aos="fade-right">

@@ -46,13 +46,13 @@
                 </div>
               </div>
             </div>
-        <a class="btn btn-primary btn-lg btn-block d-sm-none" href="{% url 'about' %}#sponsors">{% trans "Check out our Sponsors"%}</a>
+        <a class="btn btn-primary btn-lg btn-block d-sm-none" href="{% url 'about' %}">{% trans "Check out our Sponsors"%}</a>
         <a class="btn btn-primary btn-lg btn-block d-sm-none" href="{% url 'activities' %}">{% trans "Look at our Activities"%}</a>
         <a class="btn btn-primary btn-lg btn-block d-sm-none" href="{% url 'activities' %}#schedule">{% trans "Event Schedule"%}</a>
         <a class="btn btn-primary btn-lg btn-block d-sm-none" href="{% url 'about' %}#testimonials-wrap">{% trans "Read Testimonials"%}</a>
         <div id="sign">
             <div class="pole"></div>
-            <a class="left" id="pointer-l" href="{% url 'about' %}#sponsors" style="grid-row: 2"><div><i class="fas fa-chevron-left"></i>{% trans "Sponsors"%}</div></a>
+            <a class="left" id="pointer-l" href="{% url 'about' %}" style="grid-row: 2"><div><i class="fas fa-chevron-left"></i>{% trans "Sponsors"%}</div></a>
             <a class="right" id="pointer-r" href="{% url 'activities' %}" style="grid-row: 4"><div>{% trans "Activities"%}<i class="fas fa-chevron-right"></i></div></a>
             <a class="left" id="pointer-l" href="{% url 'activities' %}#schedule" style="grid-row: 6"><div><i class="fas fa-chevron-left"></i>{% trans "Schedule"%}</div></a>
             <a class="right" id="pointer-r" href="{% url 'about' %}#testimonials-wrap" style="grid-row: 8"><div>{% trans "Testimonials"%}<i class="fas fa-chevron-right"></i></div></a>
