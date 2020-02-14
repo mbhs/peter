@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-26 21:04-0500\n"
+"POT-Creation-Date: 2020-02-14 16:12-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,15 +18,31 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: core/templates/core/about.html:7
+#: core/templates/core/about.html:8 core/templates/core/index.html:55
+msgid "Sponsors"
+msgstr "Nuestros Patrocinadores"
+
+#: core/templates/core/about.html:14
+msgid "Bronze"
+msgstr "Bronce"
+
+#: core/templates/core/about.html:26
+msgid "Silver"
+msgstr "Plata"
+
+#: core/templates/core/about.html:41
+msgid "Gold"
+msgstr "Oro"
+
+#: core/templates/core/about.html:60
 msgid "About Us"
 msgstr "Quiénes somos"
 
-#: core/templates/core/about.html:14
+#: core/templates/core/about.html:65
 msgid "BBOPS"
-msgstr ""
+msgstr "BBOPS"
 
-#: core/templates/core/about.html:15
+#: core/templates/core/about.html:66
 msgid ""
 "The Blair Band and Orchestra Patrons is the booster organization that "
 "supports Montgomery Blair High School’s Instrumental Music Program. We "
@@ -39,88 +55,72 @@ msgid ""
 "that brings joy to you and your children."
 msgstr ""
 
-#: core/templates/core/about.html:16
+#: core/templates/core/about.html:67
 msgid "Visit our Homepage"
 msgstr ""
 
-#: core/templates/core/about.html:25
+#: core/templates/core/about.html:76
 msgid "Contact"
 msgstr ""
 
-#: core/templates/core/about.html:26
+#: core/templates/core/about.html:77
 msgid "Email us at "
 msgstr ""
 
-#: core/templates/core/about.html:31 core/templates/core/index.html:55
-msgid "Sponsors"
-msgstr ""
-
-#: core/templates/core/about.html:37
-msgid "Bronze"
-msgstr ""
-
-#: core/templates/core/about.html:48
-msgid "Silver"
-msgstr ""
-
-#: core/templates/core/about.html:56
-msgid "Gold"
-msgstr ""
-
-#: core/templates/core/about.html:65 core/templates/core/index.html:58
+#: core/templates/core/about.html:85 core/templates/core/index.html:58
 msgid "Testimonials"
 msgstr ""
 
-#: core/templates/core/about.html:68
+#: core/templates/core/about.html:88
 msgid ""
 "My children LOVED this event. They had a blast playing the band instruments "
 "and getting faces painted."
 msgstr ""
 
-#: core/templates/core/about.html:73
+#: core/templates/core/about.html:93
 msgid ""
 "The high schoolers were sweet and engaging with the children. Great job! We "
 "will be back!"
 msgstr ""
 
-#: core/templates/core/about.html:78
+#: core/templates/core/about.html:98
 msgid "The orchestral performance was stunning! "
 msgstr ""
 
-#: core/templates/core/about.html:83
+#: core/templates/core/about.html:103
 msgid "Instrument petting zoos were fabulous!"
 msgstr ""
 
-#: core/templates/core/about.html:88
+#: core/templates/core/about.html:108
 msgid "My eldest loved the drumming session."
 msgstr ""
 
-#: core/templates/core/about.html:93
+#: core/templates/core/about.html:113
 msgid ""
 "All the students we interacted with while our son tried the instruments were "
 "lovely."
 msgstr ""
 
-#: core/templates/core/about.html:98
+#: core/templates/core/about.html:118
 msgid "The students and staff were so patient, kind and helpful"
 msgstr ""
 
-#: core/templates/core/about.html:103
+#: core/templates/core/about.html:123
 msgid ""
 "Every single teenager was so friendly and eager to share their instrument."
 msgstr ""
 
-#: core/templates/core/about.html:108
+#: core/templates/core/about.html:128
 msgid ""
 "What a delightful way to spend the afternoon! The students are so talented "
 "and the activities were lots of fun for our kids."
 msgstr ""
 
-#: core/templates/core/about.html:113
+#: core/templates/core/about.html:133
 msgid "The Carnival was amazing - the students put on a great show."
 msgstr ""
 
-#: core/templates/core/about.html:118
+#: core/templates/core/about.html:138
 msgid ""
 "Event was really well-organized so all ages had fun - my 7 and 11 year old "
 "already asked to go again next year!"
@@ -128,7 +128,7 @@ msgstr ""
 
 #: core/templates/core/activities.html:11
 msgid "Instrument Petting Zoo"
-msgstr ""
+msgstr "Exhibición para conocer los instrumentos"
 
 #: core/templates/core/activities.html:12
 msgid ""
@@ -141,7 +141,7 @@ msgstr ""
 
 #: core/templates/core/activities.html:20
 msgid "Marching Band"
-msgstr ""
+msgstr "Banda marcial"
 
 #: core/templates/core/activities.html:21
 msgid ""
@@ -151,7 +151,7 @@ msgstr ""
 
 #: core/templates/core/activities.html:29
 msgid "Orff Instruments"
-msgstr ""
+msgstr "Taller de tambores"
 
 #: core/templates/core/activities.html:30
 msgid ""
@@ -160,7 +160,7 @@ msgstr ""
 
 #: core/templates/core/activities.html:38
 msgid "Arts and Crafts"
-msgstr ""
+msgstr "Manualidades"
 
 #: core/templates/core/activities.html:39
 msgid ""
@@ -170,7 +170,7 @@ msgstr ""
 
 #: core/templates/core/activities.html:47
 msgid "Face Painting"
-msgstr ""
+msgstr "Pintura facial"
 
 #: core/templates/core/activities.html:48
 #, python-format
@@ -182,7 +182,7 @@ msgstr ""
 
 #: core/templates/core/activities.html:56
 msgid "Cupcake Walk"
-msgstr ""
+msgstr "Caminata de pasteles"
 
 #: core/templates/core/activities.html:57
 msgid ""
@@ -194,17 +194,22 @@ msgstr ""
 
 #: core/templates/core/activities.html:66
 msgid "Raffle"
-msgstr ""
+msgstr "Sorteo de Premios"
 
 #: core/templates/core/activities.html:67
+#, fuzzy
+#| msgid ""
+#| "The raffle will be called after each orchestra performance. Prizes may "
+#| "include books, instruments, music lessons, and camp registration!"
 msgid ""
-"The raffle will be called after each orchestra performance. Prizes may "
-"include books, instruments, music lessons, and camp registration!"
-msgstr ""
+"The raffle will be called after each orchestra performance. Prizes include "
+"Peter and the Wolf storybooks, Blair T- shirts, Free music lessons, and a "
+"FREE week of summer camp at RoundHouse Theatre!"
+msgstr "Sorteo de Premios"
 
 #: core/templates/core/activities.html:75
 msgid "Concessions"
-msgstr ""
+msgstr "Venta de comida"
 
 #: core/templates/core/activities.html:76
 msgid ""
@@ -215,11 +220,11 @@ msgstr ""
 
 #: core/templates/core/activities.html:84 core/templates/core/index.html:57
 msgid "Schedule"
-msgstr ""
+msgstr "Calendario"
 
 #: core/templates/core/activities.html:87
 msgid "Auditorium"
-msgstr ""
+msgstr "Sala de auditorio"
 
 #: core/templates/core/activities.html:88
 msgid "Orff Room"
@@ -227,7 +232,7 @@ msgstr ""
 
 #: core/templates/core/activities.html:89
 msgid "Ongoing"
-msgstr ""
+msgstr "Todo el dia"
 
 #: core/templates/core/activities.html:96
 msgid "Ongoing Festivities: Instrument Petting Zoo, Face Painting, Bake Sale"
@@ -236,47 +241,63 @@ msgstr ""
 #: core/templates/core/activities.html:103
 #: core/templates/core/activities.html:128
 msgid "Marching Band Performance"
-msgstr ""
+msgstr "Banda marcial"
 
 #: core/templates/core/activities.html:104
 msgid "Raffle Drawing 1"
-msgstr ""
+msgstr "Sorteo de Premios #1"
 
 #: core/templates/core/activities.html:111
 #: core/templates/core/activities.html:145
 msgid "Orff Group Drumming Lesson"
-msgstr ""
+msgstr "Taller de tambores"
 
 #: core/templates/core/activities.html:118
 #: core/templates/core/activities.html:138
 msgid "Peter and the Wolf Performance"
-msgstr ""
+msgstr "Pedro y el lobo"
 
 #: core/templates/core/activities.html:129
 msgid "Raffle Drawing 2"
-msgstr ""
+msgstr "Sorteo de Premios #2"
 
 #: core/templates/core/activities.html:157
 msgid "Meet the Orchestra"
-msgstr ""
+msgstr "La Orquesta"
 
 #: core/templates/core/activities.html:158
 msgid "Click to hear each instrument!"
+msgstr "Hacer clic para escuchar los instrumentos"
+
+#: core/templates/core/base.html:36
+msgid "Home"
 msgstr ""
+
+#: core/templates/core/base.html:39 core/templates/core/index.html:56
+msgid "Activities"
+msgstr "Actividades divertidas"
+
+#: core/templates/core/base.html:42
+msgid "Tickets"
+msgstr "Entradas"
+
+#: core/templates/core/base.html:45
+msgid "About"
+msgstr "Quiénes somos"
 
 #: core/templates/core/index.html:11
 msgid "Peter and the Wolf"
-msgstr ""
+msgstr "Pedro y el lobo"
 
 #: core/templates/core/index.html:12
 msgid "Saturday, March 21 | 10AM - 1PM"
-msgstr ""
+msgstr "Sábado, 21 de Marzo, 10 am - 1pm"
 
 #: core/templates/core/index.html:14
 msgid ""
 "MBHS Music is proud to present Peter and the Wolf, a community music "
 "festival for children."
-msgstr ""
+msgstr "Pedro y el lobo"
 
 #: core/templates/core/index.html:20
 msgid ""
@@ -318,7 +339,7 @@ msgstr ""
 
 #: core/templates/core/index.html:49
 msgid "Check out our Sponsors"
-msgstr ""
+msgstr "Patrocinadoras"
 
 #: core/templates/core/index.html:50
 msgid "Look at our Activities"
@@ -326,14 +347,10 @@ msgstr ""
 
 #: core/templates/core/index.html:51
 msgid "Event Schedule"
-msgstr ""
+msgstr "Calendario"
 
 #: core/templates/core/index.html:52
 msgid "Read Testimonials"
-msgstr ""
-
-#: core/templates/core/index.html:56
-msgid "Activities"
 msgstr ""
 
 #: peter/settings.py:110

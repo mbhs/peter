@@ -33,18 +33,18 @@
         <div class="collapse navbar-collapse" id="navbar">
             <ul class="navbar-nav">
                 <li class="nav-item {% if navbar == 'home' %} active {% endif %}">
-                    <a class="nav-link" href="{% url 'index' %}">Home</a>
+                    <a class="nav-link" href="{% url 'index' %}">{% trans "Home"%}</a>
                 </li>
                 <li class="nav-item {% if navbar == 'activities' %} active {% endif %}">
-                    <a class="nav-link" href="{% url 'activities' %}">Activities</a>
+                    <a class="nav-link" href="{% url 'activities' %}">{% trans "Activities"%}</a>
                 </li>
                 <li class="nav-item {% if navbar == 'tickets' %} active {% endif %}">
-                    <a class="nav-link" href="{% url 'tickets' %}">Tickets</a>
+                    <a class="nav-link" href="{% url 'tickets' %}">{% trans "Tickets"%}</a>
                 </li>
                 <li class="nav-item {% if navbar == 'about' %} active {% endif %}">
-                    <a class="nav-link" href="{% url 'about' %}">About</a>
+                    <a class="nav-link" href="{% url 'about' %}">{% trans "About"%}</a>
                 </li>
-            <!--
+
                 <li>
                     <form action="{% url 'set_language' %}" method="post" class="nav-item">
                         {% csrf_token %}
@@ -61,7 +61,7 @@
                         {% endfor %}
                     </form>
 
-                </li>-->
+                </li>
 
 
 
