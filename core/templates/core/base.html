@@ -25,7 +25,22 @@
     <link rel="shortcut icon" type="image/png" href="{% static 'core/img/favicon.ico' %}"/>
 </head>
 <body>
-
+    <a data-toggle="modal" data-target="#covid" class="d-block p-3 text-center text-white bg-danger b4b">POSTPONED: SEE OUR COVID-19 UPDATE</a>
+    <div class="modal fade" tabindex="-1" role="dialog" id="covid">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title font-weight-bold">COVID-19 Update</h1>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">As a result of the COVID-19 virus, and the guidance and restrictions we have all received from the Governor and Montgomery County Public Schools, we will be unable to hold this event as planned on March 21st. We are assessing the viability of rescheduling at a time that is safe for us all to gather. We will update the site as new information becomes available. Thank you for your patience.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <nav class="navbar navbar-expand-sm navbar-light justify-content-center">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
