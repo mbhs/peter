@@ -13,6 +13,11 @@ def activities(request):
     }
     return render(request, 'core/activities.html', context)
 
+def covid(request):
+    context = {}
+    return render(request, 'core/covid.html', context)
+
+
 def about(request):
     context = {
         'navbar': 'about'
