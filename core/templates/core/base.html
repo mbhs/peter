@@ -25,18 +25,18 @@
     <link rel="shortcut icon" type="image/png" href="{% static 'core/img/favicon.ico' %}"/>
 </head>
 <body>
-    <a data-toggle="modal" data-target="#covid" class="d-block p-3 text-center text-white bg-danger b4b">CANCELLED: SEE OUR COVID-19 UPDATE</a>
+    <a data-toggle="modal" data-target="#covid" class="d-block p-3 text-center text-white bg-danger b4b">{% trans "CANCELLED: SEE OUR COVID-19 UPDATE"%}</a>
     <div class="modal fade" tabindex="-1" role="dialog" id="covid">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title font-weight-bold">COVID-19 Update</h1>
+                    <h1 class="modal-title font-weight-bold">{% trans "COVID-19 Update"%}</h1>
                 </div>
                 <div class="modal-body">
-                    <p class="lead">Due to Covid-19, and the closing of MCPS schools, Peter and the Wolf has been cancelled. See our <a href="{% url 'covid' %}">full update</a>.</p>
+                    <p class="lead">{% trans "Due to Covid-19, and the closing of MCPS schools, Peter and the Wolf has been cancelled. See our "%}<a href="{% url 'covid' %}">full update</a>.</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">{% trans "Close"%}</button>
                 </div>
             </div>
         </div>
