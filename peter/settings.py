@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '2xk#d!1r*))gq!$rc!el4t09%pb_&-=q3p77&a_-iil1p#4d-6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['peter.mbhs.edu','localhost']
 
